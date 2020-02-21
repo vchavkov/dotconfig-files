@@ -242,10 +242,13 @@ bindsym XF86AudioPrev exec playerctl previous
 # bindsym --release Caps_Lock exec pkill -SIGRTMIN+11 i3blocks
 # bindsym --release Num_Lock  exec pkill -SIGRTMIN+11 i3blocks
 
+# Set display mode
+exec_always ~/.screenlayout/screen.sh
+
 # Set wallpaper (need to install feh)
 exec_always feh --bg-scale ~/.wallpaper.jpg
 
-# Set display mode
-exec_always ~/.screenlayout/screen.sh
+# insync
+exec insync start
 
 exec_always compton -f
