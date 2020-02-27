@@ -47,6 +47,11 @@ if [ -d "/snap/bin" ] ; then
     PATH="/snap/bin:$PATH"
 fi
 
+# vmware
+if [ -d "/usr/lib/vmware/bin" ] ; then
+    PATH="/usr/lib/vmware/bin:$PATH"
+fi
+
 # nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
