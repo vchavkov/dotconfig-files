@@ -142,7 +142,7 @@ bindsym $mod+Shift+0 move container to workspace $ws10
 
 
 # assign [class="x-terminal-emulator"] $ws1
-assign [class="Code"] $ws2
+# assign [class="Code"] $ws2
 # assign [class="Chrome"] $ws3
 # assign [class="Opera"] $ws4
 # assign [class="Firefox"] $ws5
@@ -248,5 +248,6 @@ exec_always feh --bg-scale ~/.wallpaper.jpg
 
 # Set display mode
 #exec_always xrandr --output Virtual1 --mode 1360x768
+exec ~/.screenlayout/screen.sh
 
 exec_always compton -f

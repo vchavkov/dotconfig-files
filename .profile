@@ -82,3 +82,4 @@ alias b='byobu'
 
 # k3s
 # export KUBECONFIG="$(k3d get-kubeconfig --name='k3s-default')"
+
