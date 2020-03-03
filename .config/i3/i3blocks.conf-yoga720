@@ -58,56 +58,53 @@ markup=none
 # instance=/
 # interval=30
 
-# Network interface monitoring
-#
-# If the instance is not specified, use the interface used for default route.
-# The address can be forced to IPv4 or IPv6 with -4 or -6 switches.
-#[iface]
-#instance=enx00606ed59f92
-#instance=br100
-#color=#00FF00
-#interval=10
-#separator=false
-
 [wifi]
 instance=wlp63s0
 label=
 interval=10
+separator=true
+
+# Network interface monitoring
+#
+# If the instance is not specified, use the interface used for default route.
+# The address can be forced to IPv4 or IPv6 with -4 or -6 switches.
+[iface]
+instance=enx00606ed59f92
+instance=wlp63s0
+color=#A4C2F4
+interval=60
+separator=true
 
 [bandwidth]
-label=br100
-# instance=wlp63s0
-instance=br100
+# label=wlp63s0
+instance=wlp63s0
 # instance=enx00606ed59f92
-interval=1
-separator=false
-
-[bandwidth]
-label=br14
-instance=br14
+color=#A4C2F4
 interval=1
 separator=true
+
+#[load_average]
+#label=
+#interval=10
+#separator=false
 
 # CPU usage
 #
 # The script may be called with -w and -c switches to specify thresholds,
 # see the script for details.
-# [cpu_usage]
-# label=CPU
-# interval=1
-# min_width=CPU: 100.00%
-
-# [load_average]
-# label=
-# interval=10
+[cpu_usage]
+label=
+interval=1
+min_width=100.00%
+separator=false
 
 # Memory usage
 #
 # The type defaults to "mem" if the instance is not specified.
-# [memory]
-# label=MEM
-# separator=false
-# interval=1
+[memory]
+# label=
+separator=true
+interval=1
 
 # Battery indicator
 #
@@ -128,12 +125,12 @@ interval=5
 color=#A4C2F4
 
 # Guess the weather hourly
-# [weather]
-# label=
-# command=curl -Ss 'https://wttr.in?0&T&Q' | cut -c 16- | head -2 | xargs echo
-# interval=1800
-# color=#A4C2F4
-# separator=false
+#[weather]
+#label=
+#command=curl -Ss 'https://wttr.in?0&T&Q' | cut -c 16- | head -2 | xargs echo
+#interval=1800
+#color=#A4C2F4
+#separator=false
 
 # Generic media player support
 #
@@ -165,10 +162,10 @@ color=#A4C2F4
 #
 # bindsym --release Caps_Lock exec pkill -SIGRTMIN+11 i3blocks
 # bindsym --release Num_Lock  exec pkill -SIGRTMIN+11 i3blocks
-# [keyindicator]
-# instance=CAPS
-# interval=once
-# signal=11
+#[keyindicator]
+#instance=CAPS
+#interval=once
+#signal=11
 
 #[keyindicator]
 #instance=NUM
