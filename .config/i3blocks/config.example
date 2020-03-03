@@ -24,7 +24,8 @@
 #
 # The top properties below are applied to every block, but can be overridden.
 # Each block command defaults to the script name to avoid boilerplate.
-command=/usr/share/i3blocks/$BLOCK_NAME
+# Change $SCRIPT_DIR to the location of your scripts!
+command=$SCRIPT_DIR/$BLOCK_NAME
 separator_block_width=15
 markup=none
 
@@ -33,108 +34,85 @@ markup=none
 # The first parameter sets the step (and units to display)
 # The second parameter overrides the mixer selection
 # See the script for details.
-# [volume]
-# label=♪
-# instance=Master
-# instance=PCM
-# interval=1
-# signal=10
-# command=/usr/share/i3blocks/volume 5 pulse
 
-#[memory]
-#label=SWAP
-#instance=swap
-#separator=false
-#interval=30
+[volume]
+#label=♪
+label=VOL
+interval=once
+signal=10
+#STEP=5%
+
+# Memory usage
+#
+# The type defaults to "mem" if the instance is not specified.
+[memory]
+label=MEM
+separator=false
+interval=30
+
+[memory]
+label=SWAP
+instance=swap
+separator=false
+interval=30
 
 # Disk usage
 #
 # The directory defaults to $HOME if the instance is not specified.
 # The script may be called with a optional argument to set the alert
 # (defaults to 10 for 10%).
-# [disk]
-# #label=HOME
-# label=
-# instance=/
-# interval=30
-
-[wifi]
-instance=wlp63s0
-label=
-interval=10
-separator=true
+[disk]
+label=HOME
+#DIR=/mnt/data
+interval=30
 
 # Network interface monitoring
 #
 # If the instance is not specified, use the interface used for default route.
 # The address can be forced to IPv4 or IPv6 with -4 or -6 switches.
 [iface]
-instance=enx00606ed59f92
-instance=wlp63s0
-color=#A4C2F4
-interval=60
-separator=true
+#IFACE=wlan0
+color=#00FF00
+interval=10
+separator=false
 
-#[bandwidth]
-#instance=wlp63s0
-#color=#A4C2F4
-#interval=1
-#separator=true
+[wifi]
+#INTERFACE=wlp3s0
+label=wifi:
+interval=10
+separator=false
 
 [bandwidth]
-command=~/.config/i3blocks/bandwidth2/bandwidth2 
-interval=persistt
-label=
-markup=pango
-
-#[load_average]
-#label=
-#interval=10
-#separator=false
+#INTERFACE=eth0
+interval=5
 
 # CPU usage
 #
 # The script may be called with -w and -c switches to specify thresholds,
 # see the script for details.
 [cpu_usage]
-label=
-interval=1
-min_width=100.00%
-separator=false
+label=CPU
+interval=10
+min_width=CPU 100.00%
+#separator=false
 
-# Memory usage
-#
-# The type defaults to "mem" if the instance is not specified.
-[memory]
-# label=
-separator=true
-interval=1
+[load_average]
+label=LOAD
+interval=10
 
 # Battery indicator
 #
 # The battery instance defaults to 0.
-# [battery]
-# #label=BAT
-# label=⚡
-# #instance=1
-# interval=30
+[battery]
+label=BAT
+#label=⚡
+interval=30
 
 # Date Time
 #
 [time]
-label=
 command=date '+%Y-%m-%d %H:%M:%S'
-# command=date +"%H:%M"
 interval=5
-color=#A4C2F4
-
-# Guess the weather hourly
-#[weather]
-#label=
-#command=curl -Ss 'https://wttr.in?0&T&Q' | cut -c 16- | head -2 | xargs echo
-#interval=1800
-#color=#A4C2F4
-#separator=false
 
 # Generic media player support
 #
@@ -167,11 +145,13 @@ color=#A4C2F4
 # bindsym --release Caps_Lock exec pkill -SIGRTMIN+11 i3blocks
 # bindsym --release Num_Lock  exec pkill -SIGRTMIN+11 i3blocks
 #[keyindicator]
-#instance=CAPS
+#KEY=CAPS
+#markup=pango
 #interval=once
 #signal=11
 
 #[keyindicator]
-#instance=NUM
+#KEY=NUM
+#markup=pango
 #interval=once
 #signal=11

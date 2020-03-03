@@ -194,7 +194,7 @@ client.unfocused        $base02      $base02      $base03     $base0F
 client.urgent           $base02      $base08      $base00     $base0F
 
 bar {
-        #status_command i3status
+        # status_command i3status
         status_command i3blocks -c ~/.config/i3/i3blocks.conf
         font pango: System San Francisco Display, FontAwesome 13
         position top
@@ -205,7 +205,7 @@ bar {
               separator $base03
               background $base01
               statusline $base05
-              #  border  background text
+              # border  background text
               focused_workspace  $base01 $base01    $base07
               active_workspace   $base01 $base02    $base03
               inactive_workspace $base01 $base01    $base03
