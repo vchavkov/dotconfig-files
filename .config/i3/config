@@ -219,7 +219,7 @@ bar {
 #bindsym $mod+e exec setxkbmap en
 #bindsym $mod+b exec setxkbmap bg
 
-exec "setxkbmap -option 'grp:ctrl_shift_toggle' -layout us,bg -variant ,phonetic"
+# exec "setxkbmap -option 'grp:ctrl_shift_toggle' -layout us,bg -variant ,phonetic"
 # exec "setxkbmap -option 'grp:alt_shift_toggle' -layout us,bg -variant ,phonetic"
 
 #bindsym --release Caps_Lock exec pkill -SIGRTMIN+11 i3blocks
