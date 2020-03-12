@@ -65,6 +65,10 @@ alias nl="npm list --depth=0 2>/dev/null"
 # yarn
 export PATH=$PATH:$(yarn global bin)
 
+# pack
+# . $(pack completion)
+. /home/vchavkov/.pack/completion
+
 # dokku
 alias dokku='$HOME/.dokku/contrib/dokku_client.sh'
 
