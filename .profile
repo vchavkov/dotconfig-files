@@ -12,7 +12,7 @@
 if [ -n "$BASH_VERSION" ]; then
     # include .bashrc if it exists
     if [ -f "$HOME/.bashrc" ]; then
-	. "$HOME/.bashrc"
+    . "$HOME/.bashrc"
     fi
 fi
 
@@ -43,8 +43,15 @@ fi
 
 # snapd
 if [ -d "/snap/bin" ] ; then
-    XDG_DATA_DIRS="/var/lib/snapd/desktop:$XDG_DATA_DIRS"
     PATH="/snap/bin:$PATH"
+    XDG_DATA_DIRS="/snap:/var/lib/snapd/desktop:$XDG_DATA_DIRS"
+fi
+
+# go
+if [ -d "/snap/go/5569" ] ; then
+    export GOROOT=/snap/go/5569
+    export GOPATH=$HOME/go
+    export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
 fi
 
 # vmware
@@ -58,7 +65,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # npm
-export PATH=$PATH:$(npm config --global get prefix)/bin
+# export PATH=$PATH:$(npm config --global get prefix)/bin
 alias ng="npm list -g --depth=0 2>/dev/null"
 alias nl="npm list --depth=0 2>/dev/null"
 
@@ -86,4 +93,3 @@ alias b='byobu'
 
 # k3s
 # export KUBECONFIG="$(k3d get-kubeconfig --name='k3s-default')"
-

@@ -17,10 +17,11 @@
   switch_to_tab_10 = <Primary>0
 [profiles]
   [[default]]
-    background_color = "#002b36"
+    background_color = "#ffffff"
     cursor_color = "#aaaaaa"
     font = Source Code Pro Medium 9
-    foreground_color = "#839496"
+    foreground_color = "#000000"
+    scrollback_infinite = True
     use_system_font = False
 [layouts]
   [[default]]
