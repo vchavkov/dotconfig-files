@@ -51,7 +51,7 @@ fi
 if [ -d "/snap/go/5569" ] ; then
     export GOROOT=/snap/go/5569
     export GOPATH=$HOME/go
-    export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+    export PATH=$GOPATH/bin:$GOROOT/bin:/usr/local/go/bin:$PATH
 fi
 
 # vmware

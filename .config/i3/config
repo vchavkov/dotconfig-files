@@ -258,7 +258,13 @@ bindsym XF86AudioPrev exec playerctl previous
 # bindsym --release Num_Lock  exec pkill -SIGRTMIN+11 i3blocks
 
 # Set wallpaper (need to install feh)
-exec_always feh --bg-scale ~/.wallpaper.jpg
+exec feh --bg-scale ~/.wallpaper.jpg
+
+#exec_always DISPLAY=:0.0 feh --bg-scale ~/.wallpaper-2.jpg
+#exec_always DISPLAY=:0.1 feh --bg-scale ~/.wallpaper.jpg
+
+#exec_always DISPLAY=HDMI-0 feh --bg-scale ~/.wallpaper.jpg
+#exec_always DISPLAY=LVDS-1-1 feh --bg-scale ~/.wallpaper-2.jpg
 
 # Set display mo8
 exec ~/.screenlayout/screen.sh
