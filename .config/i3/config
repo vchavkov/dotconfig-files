@@ -260,12 +260,6 @@ bindsym XF86AudioPrev exec playerctl previous
 # Set wallpaper (need to install feh)
 exec feh --bg-scale ~/.wallpaper.jpg
 
-#exec_always DISPLAY=:0.0 feh --bg-scale ~/.wallpaper-2.jpg
-#exec_always DISPLAY=:0.1 feh --bg-scale ~/.wallpaper.jpg
-
-#exec_always DISPLAY=HDMI-0 feh --bg-scale ~/.wallpaper.jpg
-#exec_always DISPLAY=LVDS-1-1 feh --bg-scale ~/.wallpaper-2.jpg
-
 # Set display mo8
 exec ~/.screenlayout/screen.sh
 
