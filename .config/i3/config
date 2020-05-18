@@ -224,11 +224,11 @@ bar {
     }
 }
 
-#setxkbmap -layout en,bg
-#setxkbmap -option 'grp:ctrl_alt_toggle'
-
 #bindsym $mod+e exec setxkbmap en
 #bindsym $mod+b exec setxkbmap bg
+
+#setxkbmap -layout en,bg
+#setxkbmap -option 'grp:ctrl_alt_toggle'
 
 # exec "setxkbmap -option 'grp:ctrl_shift_toggle' -layout us,bg -variant ,phonetic"
 # exec "setxkbmap -option 'grp:alt_shift_toggle' -layout us,bg -variant ,phonetic"
@@ -257,10 +257,13 @@ bindsym XF86AudioPrev exec playerctl previous
 # bindsym --release Caps_Lock exec pkill -SIGRTMIN+11 i3blocks
 # bindsym --release Num_Lock  exec pkill -SIGRTMIN+11 i3blocks
 
-# Set wallpaper (need to install feh)
-exec feh --bg-scale ~/.wallpaper.jpg
+# policykit
+exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
 
 # Set display mo8
 exec ~/.screenlayout/screen.sh
+
+# Set wallpaper (need to install feh)
+exec feh --bg-scale ~/.wallpaper.jpg
 
 exec_always compton -f

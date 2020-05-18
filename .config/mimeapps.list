@@ -1,0 +1,39 @@
+[Added Associations]
+image/png=gimp.desktop;
+application/pdf=xpdf.desktop;
+image/jpeg=sxiv.desktop;
+text/plain=geany.desktop;
+application/zip=userapp-"p7zip-desktop"-RJ2NH0.desktop;
+application/xml=chromium.desktop;
+text/html=chromium.desktop;
+application/x-compressed-tar=userapp-"p7zip-desktop"-RJ2NH0.desktop;
+text/markdown=okularApplication_md.desktop;
+application/json=geany.desktop;
+application/x-tar=userapp-"p7zip-desktop"-RJ2NH0.desktop;
+application/gzip=userapp-"p7zip-desktop"-RJ2NH0.desktop;
+application/sql=geany.desktop;
+application/x-ms-dos-executable=wine-extension-ndm.desktop;
+application/x-bittorrent=Thunar-bulk-rename.desktop;
+x-scheme-handler/rdp=org.remmina.Remmina.desktop;
+x-scheme-handler/spice=org.remmina.Remmina.desktop;
+x-scheme-handler/vnc=org.remmina.Remmina.desktop;
+x-scheme-handler/remmina=org.remmina.Remmina.desktop;
+application/x-remmina=org.remmina.Remmina.desktop;
+
+[Default Applications]
+image/png=gimp.desktop;
+x-scheme-handler/http=chromium_chromium.desktop;
+x-scheme-handler/https=chromium_chromium.desktop;
+xdg-mime default google-chrome.desktop x-scheme-handler/https
+xdg-mime default google-chrome.desktop x-scheme-handler/http
+x-scheme-handler/postman=Postman.desktop
+x-scheme-handler/slack=slack_slack.desktop
+application/x-compressed-tar=userapp-"p7zip-desktop"-RJ2NH0.desktop
+application/x-tar=userapp-"p7zip-desktop"-RJ2NH0.desktop
+application/gzip=userapp-"p7zip-desktop"-RJ2NH0.desktop
+application/pdf=xpdf.desktop
+x-scheme-handler/rdp=org.remmina.Remmina.desktop
+x-scheme-handler/spice=org.remmina.Remmina.desktop
+x-scheme-handler/vnc=org.remmina.Remmina.desktop
+x-scheme-handler/remmina=org.remmina.Remmina.desktop
+application/x-remmina=org.remmina.Remmina.desktop
