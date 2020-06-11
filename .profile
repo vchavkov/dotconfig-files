@@ -48,11 +48,8 @@ if [ -d "/snap/bin" ] ; then
 fi
 
 # go
-if [ -d "/snap/go/5569" ] ; then
-    export GOROOT=/snap/go/5569
-    export GOPATH=$HOME/go
-    export PATH=$GOPATH/bin:$GOROOT/bin:/usr/local/go/bin:$PATH
-fi
+export GOPATH=$HOME/go
+export PATH=$GOPATH/bin:$PATH
 
 # vmware
 if [ -d "/usr/lib/vmware/bin" ] ; then
