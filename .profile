@@ -41,6 +41,11 @@ if [ -d "/opt/maven/bin" ] ; then
     PATH="/opt/maven/bin:$PATH"
 fi
 
+# Ant
+if [ -d "/opt/ant/bin" ] ; then
+    PATH="/opt/ant/bin:$PATH"
+fi
+
 # snapd
 if [ -d "/snap/bin" ] ; then
     PATH="/snap/bin:$PATH"
