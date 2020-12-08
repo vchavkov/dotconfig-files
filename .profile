@@ -32,9 +32,9 @@ if [ -d "$HOME/.local/bin" ] ; then
 fi
 
 # P4V
-if [ -d "$HOME/.bin/p4v/bin" ] ; then
-    PATH="$HOME/.bin/p4v/bin:$PATH"
-fi
+# if [ -d "$HOME/.bin/p4v/bin" ] ; then
+#     PATH="$HOME/.bin/p4v/bin:$PATH"
+# fi
 
 # Maven
 if [ -d "/opt/maven/bin" ] ; then
@@ -57,9 +57,9 @@ export GOPATH=$HOME/go
 export PATH=$GOPATH/bin:$PATH
 
 # vmware
-if [ -d "/usr/lib/vmware/bin" ] ; then
-    PATH="/usr/lib/vmware/bin:$PATH"
-fi
+# if [ -d "/usr/lib/vmware/bin" ] ; then
+#     PATH="/usr/lib/vmware/bin:$PATH"
+# fi
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
@@ -74,18 +74,23 @@ alias nl="npm list --depth=0 2>/dev/null"
 # yarn
 export PATH=$PATH:$(yarn global bin)
 
+# npm
+export PATH=$PATH:$(dirname $(nvm which current))
+
 # pack
 # . $(pack completion)
-. /home/vchavkov/.pack/completion
+# . /home/vchavkov/.pack/completion
 
 # dokku
-alias dokku='$HOME/.dokku/contrib/dokku_client.sh'
+# alias dokku='$HOME/.dokku/contrib/dokku_client.sh'
 
 # ruby
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+# export PATH="$HOME/.rbenv/bin:$PATH"
+# eval "$(rbenv init -)"
 
 alias b='byobu'
+
+alias helm='helm3'
 
 # kubectl
 # source <(kubectl completion bash)
@@ -96,4 +101,6 @@ alias b='byobu'
 # k3s
 # export KUBECONFIG="$(k3d get-kubeconfig --name='k3s-default')"
 
-# export DOCKER_HOST=tcp://dockerd.maas:2375
+# export DOCKER_HOST=tcp://172.31.50.50:2375
+
+# alias ssh2='tsh ssh'
