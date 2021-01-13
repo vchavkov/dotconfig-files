@@ -90,7 +90,7 @@ export PATH=$PATH:$(dirname $(nvm which current))
 
 alias b='byobu'
 
-alias helm='helm3'
+# alias helm='helm3'
 
 # kubectl
 # source <(kubectl completion bash)
@@ -104,3 +104,6 @@ alias helm='helm3'
 # export DOCKER_HOST=tcp://172.31.50.50:2375
 
 # alias ssh2='tsh ssh'
+
+alias pip='pip3'
+
