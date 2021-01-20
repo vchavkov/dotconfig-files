@@ -1,0 +1,35 @@
+{
+    "slack_token": "xoxp-46538220388-46499763731-1637012106259-b042b29ed355f34e8aa7e1d8c702fe17",
+    "notify": "mention",
+    "emoji": true,
+    "theme": {
+        "message": {
+            "time_format": "02/01 15:04",
+            "time": "fg-green,fg-bold",
+            "name": "colorize,fg-bold",
+            "text": "fg-blue"
+        },
+        "channel": {
+            "prefix": "fg-red,fg-bold",
+            "icon": "fg-green,fg-bold",
+            "text": "fg-blue,fg-bold"
+        },
+        "view": {
+            "fg": "white",
+            "bg": "default",
+            "border_fg": "white",
+            "border_bg": "",
+            "label_fg": "green,bold"
+        },
+        "channel": {
+            "prefix": "",
+            "icon": "",
+            "text": ""
+        },
+        "message": {
+            "time": "",
+            "name": "",
+            "text": ""
+        }
+    }
+}

@@ -3,7 +3,7 @@
   enabled_plugins = MavenPluginURLHandler, Logger, LaunchpadBugURLHandler, LaunchpadCodeURLHandler, APTURLHandler
   suppress_multiple_term_dialog = True
   title_use_system_font = False
-  title_font = SFNS Display 9
+  title_font = Cascadia Mono PL 9
 [keybindings]
   switch_to_tab_1 = <Primary>1
   switch_to_tab_2 = <Primary>2
@@ -17,10 +17,8 @@
   switch_to_tab_10 = <Primary>0
 [profiles]
   [[default]]
-    background_color = "#ffffff"
     cursor_color = "#aaaaaa"
-    font = Source Code Pro Medium 9
-    foreground_color = "#000000"
+    font = Cascadia Mono PL Semi-Light 10
     scrollback_infinite = True
     use_system_font = False
 [layouts]

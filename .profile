@@ -36,6 +36,11 @@ fi
 #     PATH="$HOME/.bin/p4v/bin:$PATH"
 # fi
 
+# Smartgit
+if [ -d "/opt/smartgit/bin" ] ; then
+    PATH="/opt/smartgit/bin:$PATH"
+fi
+
 # Maven
 if [ -d "/opt/maven/bin" ] ; then
     PATH="/opt/maven/bin:$PATH"
@@ -107,3 +112,4 @@ alias b='byobu'
 
 alias pip='pip3'
 
+alias mkubectl='minikube kubectl --'
