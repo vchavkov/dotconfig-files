@@ -51,15 +51,15 @@ if [ -d "/opt/ant/bin" ] ; then
     PATH="/opt/ant/bin:$PATH"
 fi
 
-# snapd
+# snapd /etc/profile.d/apps-bin-path
 if [ -d "/snap/bin" ] ; then
-    PATH="/snap/bin:$PATH"
+    # PATH="/snap/bin:$PATH"
     XDG_DATA_DIRS="/snap:/var/lib/snapd/desktop:$XDG_DATA_DIRS"
 fi
 
 # go
-export GOPATH=$HOME/go
-export PATH=$GOPATH/bin:$PATH
+# export GOPATH=$HOME/go
+# export PATH=$GOPATH/bin:$PATH
 
 # vmware
 # if [ -d "/usr/lib/vmware/bin" ] ; then
