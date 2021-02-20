@@ -267,9 +267,9 @@ bindsym XF86AudioPrev exec playerctl previous
 # fix display
 exec ~/.screenlayout/screen.sh
 
-exec sleep 3
+exec sleep 10
+
+exec_always compton -f
 
 # Set wallpaper (need to install feh)
 exec feh --bg-scale ~/.wallpaper.jpg
-
-exec_always compton -f

@@ -1,5 +1,5 @@
 section: screens
-	asus:
+	sf:
 		halfDuplexCapsLock = false
 		halfDuplexNumLock = false
 		halfDuplexScrollLock = false
@@ -7,7 +7,7 @@ section: screens
 		preserveFocus = false
 		switchCorners = none 
 		switchCornerSize = 0
-	macbook-air:
+	macbook-pro:
 		halfDuplexCapsLock = false
 		halfDuplexNumLock = false
 		halfDuplexScrollLock = false
@@ -21,10 +21,10 @@ section: aliases
 end
 
 section: links
-	asus:
-		right = macbook-air
-	macbook-air:
-		left = asus
+	sf:
+		right = macbook-pro
+	macbook-pro:
+		left = sf
 end
 
 section: options
