@@ -87,7 +87,7 @@ export PATH=$PATH:$(dirname $(nvm which current))
 # . /home/vchavkov/.pack/completion
 
 # dokku
-# alias dokku='$HOME/.dokku/contrib/dokku_client.sh'
+alias dokku='$HOME/.dokku/contrib/dokku_client.sh'
 
 # ruby
 # export PATH="$HOME/.rbenv/bin:$PATH"

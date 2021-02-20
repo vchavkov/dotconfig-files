@@ -70,9 +70,12 @@ ZSH_THEME="af-magic"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-#plugins=(
-#dotenv
-#)
+plugins=(
+dotenv
+)
+autoload -U +X compinit && compinit
+autoload -U +X bashcompinit && bashcompinit
+source /usr/share/bash-completion/completions/juju
 
 source $ZSH/oh-my-zsh.sh
 
