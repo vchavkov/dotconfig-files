@@ -10,7 +10,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="af-magic"
+ZSH_THEME="robbyrussell"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -73,9 +73,10 @@ ZSH_THEME="af-magic"
 plugins=(
 dotenv
 )
-autoload -U +X compinit && compinit
-autoload -U +X bashcompinit && bashcompinit
-source /usr/share/bash-completion/completions/juju
+
+# autoload -U +X compinit && compinit
+# autoload -U +X bashcompinit && bashcompinit
+# source /usr/share/bash-completion/completions/juju
 
 source $ZSH/oh-my-zsh.sh
 
@@ -84,14 +85,14 @@ source $ZSH/oh-my-zsh.sh
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-#if [[ -n $SSH_CONNECTION ]]; then
-#    export EDITOR='vim'
-# else
-#    export EDITOR='vim'
-#fi
+if [[ -n $SSH_CONNECTION ]]; then
+   export EDITOR='vim'
+else
+   export EDITOR='vim'
+fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
