@@ -17,8 +17,10 @@
   switch_to_tab_10 = <Primary>0
 [profiles]
   [[default]]
+    background_color = "#ffffff"
     cursor_color = "#aaaaaa"
     font = Cascadia Mono PL Semi-Light 10
+    foreground_color = "#000000"
     scrollback_infinite = True
     use_system_font = False
 [layouts]
