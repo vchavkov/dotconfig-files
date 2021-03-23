@@ -110,7 +110,7 @@ set $ws2 "2: Code "
 set $ws3 "3: Chrome "
 set $ws4 "4: Opera "
 set $ws5 "5: Firefox "
-set $ws6 "6:"
+set $ws6 "6: Java "
 set $ws7 "7:"
 set $ws8 "8:"
 set $ws9 "9:"
@@ -267,9 +267,8 @@ bindsym XF86AudioPrev exec playerctl previous
 # fix display
 exec ~/.screenlayout/screen.sh
 
-exec sleep 10
-
 exec_always compton -f
 
 # Set wallpaper (need to install feh)
+exec sleep 5
 exec feh --bg-scale ~/.wallpaper.jpg
